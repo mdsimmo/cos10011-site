@@ -1,0 +1,148 @@
+/*
+  filename: style.css
+  author: Matt Simmons
+  created: 16 August 2016
+  modified: 18 August 2016
+  decription: site wide css
+*/
+
+* {
+	font-family: sans-serif;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-variant: small-caps;
+	text-transform: capitalize;
+	font-family: monospace;
+	margin-bottom: 0;
+}
+h2 {
+	font-variant: small-caps;
+	font-size: 300%;
+	color: #333;
+	border-bottom: 2px solid #FC2;
+	margin: 20px -20px 0;
+	padding: 0 50px;
+}
+h3 {
+	font-size: 200%;
+	color: #444;
+}
+h4 {
+	font-size: 160%;
+	color: #555;
+}
+h5 {
+	font-size: 130%;
+	color: #666;
+}
+h6 {
+	font-size: 110%;
+	color: #777;
+}
+
+a {
+	text-decoration: none;
+	color: #27B;
+}
+
+body {
+	margin: 0;
+	background: url('images/body-background.png');
+}
+
+header {
+	text-align: center;
+	background: url('images/banner.png') no-repeat;
+	background-size: 100%;
+	padding: 1px 0;
+	max-width: 660px;
+	height: 200px;
+	margin: 12px auto 0;
+	position: relative;
+	box-shadow: 0 0 4px -1px black;
+}
+
+header h1 {
+  color: white;
+	font-size: 2.5em;
+	font-family: monospace;
+  text-shadow: 0 2px black;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin-top: -1em;
+}
+
+nav {
+	background: linear-gradient(#DA3 1px, #FFF 3px, #FE7 4px, #FC4 94%, #DA3 95%);
+	box-shadow: 0 6px 4px -4px grey;
+	margin: 0 -5px;
+	border-left: 1px solid #da3;
+	border-right: 1px solid #da3;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 6px 20px;
+	border-left: 1px solid #860;
+	border-collapse: collapse;
+	color: #333;
+}
+
+nav a:last-of-type {
+	border-right: 1px solid #860;
+}
+
+article {
+	max-width: 600px;
+	background: white;
+	box-shadow: 0 1px 4px -1px black;
+	padding: 6px 30px 30px;
+	margin: 20px auto 30px;
+}
+
+footer {
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto 10px;
+	padding: 0 0 15px;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	padding: 0;
+	margin: 0;
+	border-left: 2px solid #FC2;
+}
+
+figcaption {
+	background: #FFD;
+	border-top: 2px solid #FC2;
+	padding: 8px 20px;
+	font-style: italic;
+}
+
+aside {
+  background: #FFD;
+  padding: 10px 20px;
+  border-left: 2px solid #FC2;
+  float: right;
+  width: 25%;
+}
+
+fieldset {
+  margin-top: 20px;
+}

@@ -1,0 +1,63 @@
+---
+title: WAI Quiz
+---
+<h2>The Quiz</h2>
+<form method="post" action="http://mercury.ict.swin.edu.au/it000000/formtest.php">
+  <fieldset>
+    <legend>Student details</legend>
+    <p>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" required="required" maxlength="20" pattern="[a-zA-Z\s\-]*"/>
+    </p>
+    <p>
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" required="required" maxlength="20" pattern="[a-zA-Z\s\-]*"/>
+    </p>
+    <p>
+      <label for="student-id">Student ID</label>
+      <input type="text" id="student-id" name="student-id" required="required" pattern="\d{7,10}"/>
+   </p>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Questions 1</legend>
+    <label for="wai-initials">What does "WAI" stand for?</label>
+    <input type="text" name="wai-initials" id="wai-initials" required="required" maxlength="40" pattern="[\w\s]*"/>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Question 2</legend>
+    <p>What should the alt tag be set to for an image used for decoration?<p>
+    <input type="radio" name="img-alt" id="img-alt-3" value="description" required="required" /><label for="img-alt-3">A description of the image</label><br/>
+    <input type="radio" name="img-alt" id="img-alt-1" value="empty" /><label for="img-alt-1">empty ("")</label><br/>
+    <input type="radio" name="img-alt" id="img-alt-2" value="removed" /><label for="img-alt-2">remove the alt tag</label>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Question 3</legend>
+    <label for="wai-start">What year was the WAI started?</label>
+    <input type="number" name="wai-start" id="wai-start" required="required" min="1000" max="3000" />
+  </fieldset>
+    
+  <fieldset>
+    <legend>Question 4</legend>
+    <p>Which of the following are recommended by WAI?</p>
+    <input type="checkbox" name="recommended[]" id="rec-1" value="alt-text" /><label for="rec-1">Adding alternate text on images</label><br/>
+    <input type="checkbox" name="recommended[]" id="rec-2" value="cat-pics" /><label for="rec-2">Adding lots of cat pictures</label><br/>
+    <input type="checkbox" name="recommended[]" id="rec-3" value="transcripts" /><label for="rec-3">Adding transcripts of video content</label><br/>
+    <input type="checkbox" name="recommended[]" id="rec-4" value="div-seption" /><label for="rec-4">Using only divs instead of HTML5 elements</label>
+  </fieldset>
+    
+  <fieldset>
+    <legend>Question 5</legend>
+    <p>Who started WAI?</p>
+    <select name="founder" required="required">
+      <option value="">Please Select</option>
+      <option value="chucknoris">Chuck Noris</option>
+      <option value="w3c">W3C</option>
+      <option value="microsoft">Microsoft</option>
+      <option value="somerandom">Some random</option>
+    </select>
+  </fieldset>
+  <input type="submit" value="Submit" />
+</form>

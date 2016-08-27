@@ -1,0 +1,32 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="keywords" content="{{ page.keywords }}" />
+  <meta name="author" content="{{ page.author }}"  />
+  <title>{{ page.title}}</title>
+  
+  <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Web Accessibility Initiative (WAI)</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="topic.html">Topic</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="enhancements.html">Enhancements</a>
+    </nav>
+  </header>
+  <main>
+{{ content }}
+  </main>
+  <footer>
+    <p>{{ page.author }}</p>
+    <address><a href="mailto:{{ page.email }}">{{ page.email }}</a></address>
+  </footer>
+</body>
+</html>

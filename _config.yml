@@ -1,0 +1,10 @@
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      author: "Matthew Simmons"
+      email: "7671830@student.swin.edu.au"
+      keywords: "Web Accessibility Initiative, WAI"
+      description: "An overview of WAI"
